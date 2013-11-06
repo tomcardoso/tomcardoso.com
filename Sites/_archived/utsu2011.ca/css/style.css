@@ -1,0 +1,169 @@
+body {
+	background-repeat: repeat;
+	background-image: url(/img/bg.gif);
+	font-family: Helvetica,Arial,sans-serif;
+}
+
+#header {
+	width: 600px;
+	height: 180px;
+	background-image:url(/img/head.png);
+	background-repeat:no-repeat;
+	background-position:right top;
+	display: block;
+	margin-bottom: 20px;
+}
+
+.wrapper {
+   width:600px;
+   padding-top:35px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+p {
+margin: 0 0 0 0;
+}
+
+.footer {
+
+}
+
+.clear {
+	clear:both
+}
+
+
+.label{
+	display:inline;
+	float:left;
+	padding-bottom: 2px;
+	font-size:15px;
+	font-weight:bold;
+	color:#ffffff;
+}
+
+input {
+	width: 100%;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+textarea {
+	width: 100%;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	resize: vertical;
+}
+
+.optional {
+	font-weight: 100;
+	font-size: 13px;
+	display: inline;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+button {
+	margin:0 auto;
+	display: block;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	font: 16px Helvetica, Arial, sans-serif;
+	padding: .55em 2em .55em;
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+}
+
+#button:active {
+	position: relative;
+	top: 1px;
+}
+
+.rage {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 10px;
+}
+
+.message {
+	display: block;
+	text-align: center;
+	padding-bottom: 5px;
+	font-size:24px;
+	font-weight:bold;
+	color:#ffffff;
+}
+
+.message img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 10px;
+}
+
+#left {
+	float: left;
+	margin-right: 30px;
+	width: 180px;
+}
+
+#middle {
+	float: left;
+	margin-right: 30px;
+	width: 180px;
+}
+
+#right {
+	float: left;
+	width: 180px;
+}
+
+#textbox {
+	padding-top: 50px;
+	padding-bottom: 7px;
+}
+
+#instructions {
+	font: 15px Helvetica, Arial, sans-serif;
+	font-weight: 100;
+	color: white;
+	width: 600px;
+	padding-bottom: 35px;
+}
+
+#instructions a:link {
+	font: inherit;
+	color: white;
+	padding-bottom: 10px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#instructions a:hover {
+	font: inherit;
+	color: white;
+	padding-bottom: 35px;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+#instructions a:visited {
+	font: inherit;
+	color: white;
+	padding-bottom: 35px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#disclaimer {
+	font: 10px Helvetica, Arial, sans-serif;
+	color: white;
+	width: 450px;
+	margin: 0 auto;
+	padding-top: 10px;
+	text-align:center;
+}

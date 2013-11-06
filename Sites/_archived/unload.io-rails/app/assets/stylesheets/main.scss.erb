@@ -1,0 +1,274 @@
+@import "partials/normalize";
+@import "partials/base";
+@import "partials/mixins";
+@import "partials/fonts";
+@import "partials/grid";
+
+// Colours
+
+$white			: #ffffff;
+$darkpurple     : #9481bc;
+$lightpurple    : lighten($darkpurple, 30%);
+$mediumpurple   : lighten($darkpurple, 20%);
+$stripe    		: #28A0E5;
+
+// Animations
+
+$ease-in	    : all 50ms ease-in;
+$ease-out	    : all 50ms ease-out;
+
+// Body and Main Elements
+
+* {
+	@include box-sizing(border-box);
+}
+
+html {
+	background-color: $lightpurple;
+	overflow-y: scroll;
+}
+
+body {
+	font-family: din_regular, $helvetica;
+}
+
+a {
+	font-size: 1.6em;
+	letter-spacing: -0.05em;
+	color: white;
+	text-decoration: none;
+}
+
+h1, h3 {
+	font-family: din_medium;
+	letter-spacing: -0.05em;
+	line-height: 1.1em;
+	font-size: 2.8em;
+	color: $darkpurple;
+	text-align: center;
+}
+
+h3 {
+	font-size: 1.6em;	
+}
+
+h3 a {
+	font-size: 1.6rem;
+	color: darken($darkpurple, 25%);
+	@include hover-darker;
+}
+
+input, textarea {
+	@include placeholder {
+	    color: $lightpurple;
+	    text-align: center;
+	}
+	@include transition ($ease-out);
+	font-size: 1.6em;
+	color: $lightpurple;
+	border-color: $mediumpurple;
+	text-align: center;
+	color: $darkpurple;
+	box-shadow: none;
+	border-radius: 0.3em;
+	border: 0.1em solid $lightpurple;
+	width: 100%;
+	margin-bottom: 0.8em;
+	resize: none;
+	padding: 0.15em 0.4em 0.15em 0.4em;
+	&:focus {
+		@include placeholder {
+		    color: transparent;
+		}
+		box-shadow: none;
+		border-radius: 0.3em;
+		border: 0.1em solid $darkpurple;
+		outline: none;
+		@include transition ($ease-in);		
+	}
+}
+
+/* .dropzone {
+	border-style: dashed;
+	border-width: 0.15em;
+	color: $lightpurple;
+	text-align: center;
+	padding: 2em 0 2em 0;
+	&:hover {
+		cursor: pointer;
+	}
+	@include user-select(none);
+} */
+
+// Classes
+
+.container {
+	@include outer-container;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+.index-body, .seller-body, .buyer-body {
+    @include span-columns(4);
+    padding: 0 1.5em 0 1.5em;
+    border: 0.35em solid $darkpurple;
+    border-radius: 1em;
+    background-color: $white;
+}
+
+.seller-body {
+    padding-bottom: 1em;
+}
+
+.logo {
+	margin: 2em auto 2em auto;
+    background-image: url(<%= asset_path("unload.png") %>);
+	@include size(120);
+	@include user-select(none);
+}
+
+.item-name {
+	width: 70%;
+	display: inline-block;
+}
+
+.item-price {
+	width: 25%;
+	float: right;
+	display: inline-block;
+}
+
+.item-email {
+	width: 70%;
+	display: inline-block;
+}
+
+.item-description {
+	margin: 0;
+	margin-bottom: 1em;
+	text-align: left;
+	font-family: din_regular;
+}
+
+.buyer-name {
+	@extend .item-name;
+	text-align: left;
+}
+
+.buyer-price {
+	@extend .item-price;
+	text-align: right;
+}
+
+.email-notice {
+	@extend h3;
+	margin-bottom: 0.5em;
+}
+
+.button {
+	padding: 0.2em 0.5em 0.2em 0.5em;
+	background-color: $darkpurple;
+	border-radius: 0.2em;
+	text-align: center;
+}
+
+.wide {
+	display: block;
+	margin-bottom: 1em;
+	@include hover-btn-medium;
+}
+
+.add {
+	background-color: $mediumpurple;
+	margin-bottom: 2em;
+}
+
+.create, .copy, {
+	@extend .button;
+	@extend .item-price;
+	@include hover-btn-dark;
+	border: none;
+	color: white;
+	&:focus, &:active {
+	border: none;
+	border-radius: 0.2em;
+	}
+}
+
+.buy {
+	@include hover-btn-dark;
+}
+
+.learnmore {
+	margin-top: -0.4em;
+}
+
+.links {
+	margin-bottom: 0.5em;
+}
+
+.thumb-row {
+	margin-bottom: 0.3em;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;	
+	text-align: justify;
+	-ms-text-justify: distribute-all-lines;
+	text-justify: distribute-all-lines;
+}
+
+.stretch {
+	width: 100%;
+	display: inline-block;
+	font-size: 0;
+	line-height: 0
+}
+
+.item-thumb{
+	width: 23.5%;
+	border-radius: 0.2em;
+}
+
+.buyer-item {
+	margin-bottom: 2.5em;
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.buyer-item-top {
+	margin-bottom: -0.5em;
+}
+
+.stripe-btn {
+	margin-bottom: 1.8em;
+	@include hover-btn-dark;
+}
+
+.index-wrapper {
+    @include span-columns(4);
+}
+
+.getstarted {
+    border-radius: 0.3em;
+    font-family: din_medium;
+    font-size: 3em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: block;
+	@include hover-btn-dark;
+}
+
+.footer-wrapper {
+	display: block;
+	text-align: center;
+	margin: 3em 0 1.5em 0;
+}
+
+.footer {
+	color: $darkpurple;
+	text-transform: uppercase;
+	font-size: 1em;
+	display: inline-block;
+	@include hover-dark;
+}

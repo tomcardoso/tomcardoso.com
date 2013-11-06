@@ -1,0 +1,39 @@
+@mixin placeholder {
+  &.placeholder          	   { @content; }
+  &::-moz-placeholder          { @content; }
+  &:-moz-placeholder 	   	   { @content; }
+  &::-webkit-input-placeholder { @content; }
+  &:-ms-input-placeholder 	   { @content; }
+}
+
+@mixin hover-btn-dark {
+	@include transition ($ease-out);
+	&:hover {
+		background-color: darken($darkpurple, 10%);
+		@include transition ($ease-in);
+	}	
+}
+	
+@mixin hover-btn-medium {
+	@include transition ($ease-out);
+	&:hover {
+		background-color: darken($mediumpurple, 10%);
+		@include transition ($ease-in);
+	}	
+}
+
+@mixin hover-darker {
+	@include transition ($ease-out);
+	&:hover {
+		color: darken($darkpurple, 45%);
+		@include transition ($ease-in);
+	}
+}
+
+@mixin hover-dark {
+	@include transition ($ease-out);
+	&:hover {
+		color: darken($darkpurple, 20%);
+		@include transition ($ease-in);
+	}	
+}
