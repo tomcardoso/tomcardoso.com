@@ -1,4 +1,0 @@
-User-agent: *
-Disallow: /hithere/
-Disallow: /resume/
-Disallow: /ndxz-studio/
