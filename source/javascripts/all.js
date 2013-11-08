@@ -18,7 +18,7 @@ $(document).ready(function() {
             var bottom_of_object = $(this).position().top + $(this).outerHeight();
             var bottom_of_window = $(window).scrollTop() + $(window).height();
 
-            /* If the object is completely visible in the window, fade it it */
+            /* If the object is completely visible in the window, fade it in */
             if( bottom_of_window > bottom_of_object ){
 
                 $(this).animate({
@@ -33,4 +33,19 @@ $(document).ready(function() {
 
     });
 
+});
+
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 800, 'easeOutQuart');
+        return false;
+      }
+    }
+  });
 });

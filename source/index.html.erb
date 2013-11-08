@@ -6,31 +6,33 @@ title: Tom Cardoso
   <div class="index">
     <div class="top">
       <div class="center">
-        <h4 class="intro">I'm Tom Cardoso, <%= link_to "unicorn", "http://irondavy.quora.com/The-Myth-of-the-Myth-of-the-Unicorn-Designer" %>.
+        <h4 class="intro">I'm Tom Cardoso, <%= link_to "pixel pusher", "http://www.urbandictionary.com/define.php?term=pixel%20pusher" %>.
         </h4>
         <h4 class="intro">
-          When I'm not designing user experiences or writing code, I can be found on <%= link_to "Twitter", "http://www.twitter.com/tom_cardoso/" %>, <%= link_to "500px", "http://www.500px.com/tomcardoso/" %>, or <%= mail_to "hello@tomcardoso.com", "email" %>.</h4>
+          When I'm not designing user experiences or hacking on a project, I can be found on <%= link_to "Twitter", "http://www.twitter.com/tom_cardoso/" %>, <%= link_to "500px", "http://www.500px.com/tomcardoso/" %>, or <%= mail_to "hello@tomcardoso.com", "email" %>.</h4>
       </div>
       <div class="scroll">
-        <h5 class="intro">To see some of my work, scroll on down.</h5>
+        <%= link_to "See my work", "#scroll", :class => "button"  %>
       </div>
     </div>
     <div class="spacer"></div>
+    <a name="scroll" href="#"></a>
+    <br>
     <div class="images">
       <%= image_tag 'unload.png', :title => 'Unload.io', :class => 'samples' %>
-      <p><b>Unload.io</b>: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <p><b>Unload.io</b>: Design and development for a personal sales platform side project.</p>
 
-      <%= image_tag 'unload.png', :title => 'Unload.io', :class => 'samples' %>
-      <p><b>Unload.io</b>: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <%= image_tag 'tcc.png', :title => 'Unload.io', :class => 'samples' %>
+      <p><b>Testicular Cancer Canada</b>: Branding, design and development for a national Canadian non-profit. See it <%= link_to "here", "http://www.testicularcancercanada.ca/" %>.</p>
 
-      <%= image_tag 'unload.png', :title => 'Unload.io', :class => 'samples' %>
-      <p><b>Unload.io</b>: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <%= image_tag 'diy.png', :title => 'Unload.io', :class => 'samples' %>
+      <p><b>DIY Sandwich</b>: Design and art direction for a Dempster's campaign website. See it <%= link_to "here", "http://www.diysandwich.ca/" %>.</p>
 
-      <%= image_tag 'unload.png', :title => 'Unload.io', :class => 'samples' %>
-      <p><b>Unload.io</b>: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <%= image_tag 'icd.png', :title => 'Unload.io', :class => 'samples' %>
+      <p><b>Institute of Corporate Directors</b>: Design and art direction. See it <%= link_to "here", "http://www.icd.ca/" %>.</p>
 
-      <%= image_tag 'unload.png', :title => 'Unload.io', :class => 'samples' %>
-      <p><b>Unload.io</b>: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <%= image_tag 'kb.png', :title => 'Unload.io', :class => 'samples' %>
+      <p><b>kb</b>: Design and art direction for a Middle Eastern restaurant concept.</p>
     </div>
     <div class="footer">
       <p>This site was built using <%= link_to "Middleman", "http://www.middlemanapp.com/" %>, <%= link_to "Sass", "http://www.sass-lang.com/" %>, <%= link_to "Bourbon", "http://www.bourbon.io/" %>, <%= link_to "Neat", "http://neat.bourbon.io/" %>, <%= link_to "Heroku", "http://www.heroku.com/" %>, and <%= link_to "unicorn power", "http://pbfcomics.com/103/" %>.</p>

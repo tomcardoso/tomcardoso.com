@@ -2,7 +2,12 @@
 # the following line to use "https"
 source 'http://rubygems.org'
 
+ruby "1.9.3"
+
 gem "middleman", "~>3.1.6"
+gem "rack-contrib"
+gem "puma"
+
 gem "middleman-favicon-maker", "~> 3.2"
 
 # Live-reloading plugin
