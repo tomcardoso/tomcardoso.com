@@ -1,0 +1,55 @@
+// ---------------------------------------------------------------------------
+// Settings
+
+$sans-stack : 'FranklinGothicFS', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+// ---------------------------------------------------------------------------
+// Fonts
+
+// Franklin Gothic Book
+@font-face {
+  font-family: 'FranklinGothicFS';
+  src: url('../fonts/FranklinGothic-Book-webfont.eot');
+  src: url('../fonts/FranklinGothic-Book-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/FranklinGothic-Book-webfont.woff') format('woff'),
+       url('../fonts/FranklinGothic-Book-webfont.ttf') format('truetype'),
+       url('../fonts/FranklinGothic-Book-webfont.svg#dinbold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// Franklin Gothic Italic
+@font-face {
+  font-family: 'FranklinGothicFS';
+  src: url('../fonts/FranklinGothic-BookIt-webfont.eot');
+  src: url('../fonts/FranklinGothic-BookIt-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/FranklinGothic-BookIt-webfont.woff') format('woff'),
+       url('../fonts/FranklinGothic-BookIt-webfont.ttf') format('truetype'),
+       url('../fonts/FranklinGothic-BookIt-webfont.svg#dinbold') format('svg');
+  font-weight: normal;
+  font-style: italic;
+}
+
+// Franklin Gothic Medium
+@font-face {
+  font-family: 'FranklinGothicFS';
+  src: url('../fonts/FranklinGothic-Med-webfont.eot');
+  src: url('../fonts/FranklinGothic-Med-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/FranklinGothic-Med-webfont.woff') format('woff'),
+       url('../fonts/FranklinGothic-Med-webfont.ttf') format('truetype'),
+       url('../fonts/FranklinGothic-Med-webfont.svg#dinbold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+// Franklin Gothic Medium
+@font-face {
+  font-family: 'FranklinGothicFS';
+  src: url('../fonts/FranklinGothic-MedIt-webfont.eot');
+  src: url('../fonts/FranklinGothic-MedIt-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/FranklinGothic-MedIt-webfont.woff') format('woff'),
+       url('../fonts/FranklinGothic-MedIt-webfont.ttf') format('truetype'),
+       url('../fonts/FranklinGothic-MedIt-webfont.svg#dinbold') format('svg');
+  font-weight: bold;
+  font-style: italic;
+}

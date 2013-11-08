@@ -1,0 +1,111 @@
+@import "partials/normalize";
+@import "partials/base";
+@import "partials/mixins";
+@import "partials/fonts";
+@import "partials/typography";
+@import "partials/grid";
+
+// Colours
+
+$background : hsla(0, 0%, 0%, 0.03);
+
+
+// Helper Variables
+
+
+// Animations
+
+$ease-in	    : all 50ms ease-in;
+$ease-out	    : all 50ms ease-out;
+
+// Body and Main Elements
+
+* {
+	@include box-sizing(border-box);
+}
+
+html {
+	background-color: $background;
+}
+
+body {
+	font-family: $sans-stack;
+}
+
+a {
+	text-decoration: none;
+	font-weight: bold;
+	color: inherit;
+	&:hover, &:focus, &:active {
+		text-decoration: underline;
+	}
+}
+
+img {
+	border-radius: 0.4em;
+}
+
+// Classes
+
+.container {
+	@include outer-container;
+}
+
+.index {
+  @include span-columns(6);
+}
+
+.top {
+	position: relative;
+}
+
+.center {
+	margin: auto;
+	position: absolute;
+	top: 45%;
+	text-align: center;
+	width: 100%;
+}
+
+.intro {
+	width: 23em;
+	margin: 0 auto;
+	margin-bottom: 0.4em;
+	font-weight: normal;
+	text-align: center;
+}
+
+.scroll {
+	@extend .center;
+	top: 93%;
+}
+
+.spacer {
+	height: 4em;
+}
+
+.images {
+	text-align: center;
+	margin-bottom: 10em;
+}
+
+.images p {
+	font-size: 1.1em;
+	margin-bottom: 3em;
+}
+
+.samples {
+	opacity: 0;
+	margin-top: 2em;
+	margin-bottom: 0.2em;
+}
+
+.footer {
+	@extend .intro;
+margin-bottom: 2em;
+width: 50em;
+}
+
+.footer p {
+	margin-bottom: 0.2em;
+}

@@ -2,6 +2,9 @@
 # Compass
 ###
 
+require "bourbon";
+require "neat";
+
 # Change Compass configuration
 # compass_config do |config|
 #   config.output_style = :compact
@@ -36,7 +39,7 @@
 # activate :automatic_image_sizes
 
 # Reload the browser automatically whenever files change
-# activate :livereload
+activate :livereload
 
 # Methods defined in the helpers block are available in templates
 # helpers do
@@ -53,6 +56,9 @@ set :images_dir, 'images'
 
 # Build-specific configuration
 configure :build do
+
+activate :favicon_maker
+
   # For example, change the Compass output style for deployment
   # activate :minify_css
 
