@@ -5,6 +5,8 @@
 require "bourbon";
 require "neat";
 
+# require "mixpanel-ruby";
+
 # Change Compass configuration
 # compass_config do |config|
 #   config.output_style = :compact
@@ -47,6 +49,11 @@ activate :livereload
 #     "Helping"
 #   end
 # end
+
+# Activate google-analytics extension
+activate :google_analytics do |ga|
+  ga.tracking_id = 'UA-32154597-1'
+end
 
 activate :directory_indexes
 

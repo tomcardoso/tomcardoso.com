@@ -13,8 +13,11 @@ gem "middleman-favicon-maker", "~> 3.2"
 # Live-reloading plugin
 gem "middleman-livereload", "~> 3.1.0"
 
-# Near grid
+# Neat grid
 gem "neat"
+
+# Analytics
+gem "middleman-google-analytics"
 
 # For faster file watcher updates on Windows:
 gem "wdm", "~> 0.1.0", :platforms => [:mswin, :mingw]
