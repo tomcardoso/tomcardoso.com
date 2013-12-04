@@ -8,6 +8,8 @@ gem "middleman", "~>3.1.6"
 gem "rack-contrib"
 gem "puma"
 
+gem 'middleman-s3_sync'
+
 gem "middleman-favicon-maker", "~> 3.2"
 
 # Live-reloading plugin

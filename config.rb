@@ -5,8 +5,6 @@
 require "bourbon";
 require "neat";
 
-# require "mixpanel-ruby";
-
 # Change Compass configuration
 # compass_config do |config|
 #   config.output_style = :compact
@@ -55,10 +53,23 @@ activate :google_analytics do |ga|
   ga.tracking_id = 'UA-32154597-1'
 end
 
+activate :s3_sync do |s3_sync|
+  s3_sync.bucket                     = 'tomcardoso' # The name of the S3 bucket you are targetting. This is globally unique.
+  s3_sync.region                     = 'us-west-2'     # The AWS region for your bucket.
+  s3_sync.delete                     = false # We delete stray files by default.
+  s3_sync.after_build                = true # We do not chain after the build step by default.
+  s3_sync.prefer_gzip                = true
+  s3_sync.path_style                 = true
+  s3_sync.reduced_redundancy_storage = false
+  s3_sync.acl                        = 'public-read'
+  s3_sync.encryption                 = false
+end
+
+
+
 activate :directory_indexes
 
 set :build_dir, "tmp"
-
 
 set :css_dir, 'stylesheets'
 
