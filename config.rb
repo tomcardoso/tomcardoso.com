@@ -54,7 +54,7 @@ activate :google_analytics do |ga|
 end
 
 activate :s3_sync do |s3_sync|
-  s3_sync.bucket                     = 'tomcardoso' # The name of the S3 bucket you are targetting. This is globally unique.
+  s3_sync.bucket                     = 'www.tomcardoso.com' # The name of the S3 bucket you are targetting. This is globally unique.
   s3_sync.region                     = 'us-west-2'     # The AWS region for your bucket.
   s3_sync.delete                     = false # We delete stray files by default.
   s3_sync.after_build                = true # We do not chain after the build step by default.
