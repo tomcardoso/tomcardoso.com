@@ -21,3 +21,6 @@
 
 # For Heroku build
 /tmp
+
+# Ignore print samples PDF
+/source/print_samples.pdf
