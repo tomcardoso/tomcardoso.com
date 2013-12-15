@@ -18,6 +18,9 @@ gem "middleman-livereload", "~> 3.1.0"
 # Neat grid
 gem "neat"
 
+# Image optimization
+gem "middleman-imageoptim", "~> 0.1.3"
+
 # Analytics
 gem "middleman-google-analytics"
 
