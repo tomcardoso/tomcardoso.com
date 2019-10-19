@@ -1,52 +1,14 @@
 //= require_tree .
 
-$(document).ready(function()
+(function init(root) {
 
-{
-  windowHeight = $(window).height();
-  $('.top').css('min-height', windowHeight);
-});
+  document.addEventListener("DOMContentLoaded", function(event) {
+    var height = root.outerHeight;
+    var elHeight = document.querySelector('div').getBoundingClientRect().height;
 
-$(document).ready(function() {
+    document.querySelector('div').style.position = "absolute";
+    document.querySelector('div').style.top = ((height / 2) - elHeight) + "px";
 
-    /* Every time the window is scrolled ... */
-    $(window).scroll( function(){
-
-        /* Check the location of each desired element */
-        $('.samples').each( function(i){
-
-            var bottom_of_object = $(this).position().top + ($(this).outerHeight() / 2);
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
-
-
-            /* If the object is completely visible in the window, fade it in */
-            if( bottom_of_window > bottom_of_object ){
-
-                $(this).animate({
-                  'opacity':'1',
-                  'margin-top': '0'
-                  }, 600, 'easeOutQuart');
-
-
-            }
-
-        });
-
-    });
-
-});
-
-$(function() {
-  $('a[href*=#]:not([href=#])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html,body').animate({
-          scrollTop: target.offset().top
-        }, 800, 'easeOutQuart');
-        return false;
-      }
-    }
   });
-});
+
+})(typeof window !== "undefined" ? window : this);

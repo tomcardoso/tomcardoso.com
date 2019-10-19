@@ -1,32 +1,28 @@
+@import "bourbon";
+@import "neat";
+
 @import "partials/normalize";
-@import "partials/base";
 @import "partials/mixins";
 @import "partials/fonts";
-@import "partials/typography";
-@import "partials/grid";
+
+$border-box-sizing: true !global;
+$grid-columns: 12;
+$max-width: em(1180);
+$mobile: new-breakpoint(max-width 780px 4);
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 3em;
+  line-height: 1em;
+  margin-bottom: .5em;
+}
 
 // Colours
 
 $background : hsla(0, 0%, 0%, 0.03);
-
-
-// Mixins
-
-@mixin hover-btn {
-	@include transition ($ease-out);
-	&:hover, &:focus, &:active {
-		text-decoration: none;
-		color: white;
-		background-color: black;
-		cursor: pointer;
-		@include transition ($ease-in);
-	}
-}
-
-// Animations
-
-$ease-in	    : all 150ms ease-in;
-$ease-out	    : all 150ms ease-out;
 
 // Body and Main Elements
 
@@ -40,6 +36,7 @@ html {
 
 body {
 	font-family: $sans-stack;
+	font-size: 16px;
 }
 
 a {
@@ -51,85 +48,24 @@ a {
 	}
 }
 
-img {
-	border-radius: 0.4em;
-}
-
 // Classes
 
-.container {
+section {
 	@include outer-container;
-}
-
-.index {
-  @include span-columns(6);
-  padding: 0 1em;
-}
-
-.top {
-	position: relative;
-}
-
-.center {
-	margin: auto;
-	position: absolute;
-	top: 45%;
-	text-align: center;
-	width: 100%;
-}
-
-.intro {
-	width: 23.5em;
 	margin: 0 auto;
-	margin-bottom: 0.4em;
-	font-weight: normal;
 	text-align: center;
 }
 
-.scroll {
-	@extend .center;
-	top: 58%;
+article {
+	width: 35%;
+	margin: 0 auto;
+	position: relative;
+	@include media($mobile) {
+		width: 80%;
+	}
 }
 
-.button {
-	border-radius: 0.4em;
-	border:0.1rem solid black;
-	width: auto;
-	padding: 0.6em 1.2em;
-	text-decoration: none;
-	font-size: 1.2em;
+h1 {
+	font-size: 1.4em;
 	font-weight: normal;
-	font-size: 1.3125rem;
-	line-height: 4em;
-	@include hover-btn;
-}
-
-.spacer {
-	height: 4em;
-}
-
-.images {
-	text-align: center;
-	margin-bottom: 10em;
-}
-
-.images p {
-	font-size: 1.1em;
-	margin-bottom: 3em;
-}
-
-.samples {
-	opacity: 0;
-	margin-top: 2em;
-	margin-bottom: 0.4em;
-}
-
-.footer {
-	@extend .intro;
-margin-bottom: 1.4em;
-width: 50em;
-}
-
-.footer p {
-	margin-bottom: 0.0em;
 }

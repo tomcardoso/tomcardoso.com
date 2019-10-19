@@ -1,53 +1,15 @@
 ---
-title: Tom Cardoso Portfolio
+title: Tom Cardoso, graphic journalist
 ---
 
-<div class="container">
-  <div class="index">
-    <div class="top">
-      <div class="center">
-        <h4 class="intro">I'm Tom Cardoso, <%= link_to "pixel pusher", "http://www.urbandictionary.com/define.php?term=pixel%20pusher" %>.
-        </h4>
-        <h4 class="intro">
-          When I'm not designing user experiences or ogling corgi pics, I can be found on <%= link_to "Twitter", "http://www.twitter.com/tom_cardoso/" %>, <%= link_to "500px", "http://www.500px.com/tomcardoso/" %>, or <%= mail_to "hello@tomcardoso.com", "email", :onclick => "_gaq.push(['_trackEvent', 'Email Link', 'Click']);" %>.
-        </h4>
-        <br>
-        <%= link_to "See my work", "#scroll", :class => "button"  %>
-      </div>
+<section>
+  <article>
+    <div>
+      <h1>Hi! I&rsquo;m Tom Cardoso, a graphic journalist.</h1>
+      <h1>When I&rsquo;m not working at <a href="http://www.theglobeandmail.com/">The Globe and Mail</a> as a graphics editor, I can be found on <%= link_to "Twitter", "http://www.twitter.com/tom_cardoso/" %>, <%= link_to "GitHub", "http://www.github.com/tomcardoso" %> or <%= mail_to "hello@tomcardoso.com", "email", :onclick => "_gaq.push(['_trackEvent', 'Email Link', 'Click']);" %>.
+      </h1>
     </div>
-    <div class="spacer"></div>
-    <div id="scroll"></div>
-    <br>
-    <div class="images">
-      <%= image_tag 'unload.png', :alt => 'Unload.io', :class => 'samples' %>
-      <p><b>Unload.io</b>: Design and development for a personal sales platform side project.</p>
-
-      <%= image_tag 'tcc.png', :alt => 'Testicular Cancer Canada', :class => 'samples' %>
-      <p><b>Testicular Cancer Canada</b>: Branding, design and development for a national Canadian non-profit. See it <%= link_to "here", "http://www.testicularcancercanada.ca/" %>.</p>
-
-      <%= image_tag 'diy.png', :alt => 'DIY Sandwich', :class => 'samples' %>
-      <p><b>DIY Sandwich</b>: Design and art direction for a Dempster's campaign website. See it <%= link_to "here", "http://www.diysandwich.ca/" %>.</p>
-
-      <%= image_tag 'diy-phones.png', :alt => 'DIY Sandwich Mobile', :class => 'samples' %>
-      <p><b>DIY Sandwich</b>: Design and art direction for a Dempster's campaign website. See it <%= link_to "here", "http://www.diysandwich.ca/" %>.</p>
-
-      <%= image_tag 'royalcanin.png', :alt => 'Royal Canin', :class => 'samples' %>
-      <p><b>Royal Canin</b>: Spec designs for a proposed breed-specific knowledge portal for dog owners.</p>
-
-      <%= image_tag 'roycan-phones.png', :alt => 'Royal Canin', :class => 'samples' %>
-      <p><b>Royal Canin</b>: Spec designs for a proposed pet food recommendation web app.</p>
-
-      <%= image_tag 'icd.png', :alt => 'Institute of Corporate Directors', :class => 'samples' %>
-      <p><b>Institute of Corporate Directors</b>: Design and art direction. See it <%= link_to "here", "http://www.icd.ca/" %>.</p>
-
-      <%= image_tag 'kb.png', :alt => 'kb', :class => 'samples' %>
-      <p><b>kb</b>: Design and art direction for a Middle Eastern restaurant concept.</p>
-    </div>
-    <div class="footer">
-      <p>This site was built using <%= link_to "Middleman", "http://www.middlemanapp.com/" %>, <%= link_to "Sass", "http://www.sass-lang.com/" %>, <%= link_to "Bourbon", "http://www.bourbon.io/" %>, <%= link_to "Neat", "http://neat.bourbon.io/" %>, <%= link_to "S3", "http://www.amazon.com/S3" %>, and <%= link_to "unicorn power", "http://pbfcomics.com/103/" %>.</p>
-      <p>Check out my code on <%= link_to "GitHub", "http://www.github.com/tomcardoso" %>, listen to some of my favourite tunes on the <%= link_to "Hype Machine", "http://www.hypem.com/tomcardoso" %> or <%= mail_to "hello@tomcardoso.com", "get in touch", :onclick => "_gaq.push(['_trackEvent', 'Email Link', 'Click']);" %>.</p>
-    </div>
-  </div>
-</div>
+  </article>
+</section>
 
 <%= google_analytics_tag %>

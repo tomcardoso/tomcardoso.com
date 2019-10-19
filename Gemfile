@@ -2,7 +2,7 @@
 # the following line to use "https"
 source 'http://rubygems.org'
 
-ruby "1.9.3"
+ruby "2.0.0"
 
 gem "middleman", "~>3.1.6"
 gem "rack-contrib"
@@ -16,6 +16,7 @@ gem "middleman-favicon-maker", "~> 3.2"
 gem "middleman-livereload", "~> 3.1.0"
 
 # Neat grid
+gem "bourbon"
 gem "neat"
 
 # Image optimization
