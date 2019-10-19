@@ -1,13 +1,11 @@
 <!doctype html>
 <html>
   <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-32154597-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'UA-32154597-1');
     </script>
     <meta charset="utf-8">
@@ -15,18 +13,15 @@
     <meta name="description" content="Tom Cardoso, reporter and data journalist">
     <title>Tom Cardoso, reporter and data journalist</title>
     <link rel="stylesheet" href="/style/main.css">
+    <script type="text/javascript" src="./js/text-balancer.js"></script>
   </head>
-
   <body>
-    <section>
-      <article>
-        <div>
-          <h1>Hi! I&rsquo;m Tom Cardoso, a graphic journalist.</h1>
-          <h1>When I&rsquo;m not working at <a href="http://www.theglobeandmail.com/">The Globe and Mail</a> as a graphics editor, I can be found on <%= link_to "Twitter", "http://www.twitter.com/tom_cardoso/" %>, <%= link_to "GitHub", "http://www.github.com/tomcardoso" %> or <%= mail_to "hello@tomcardoso.com", "email", :onclick => "_gaq.push(['_trackEvent', 'Email Link', 'Click']);" %>.
-          </h1>
-        </div>
-      </article>
-    </section>
-
+    <div>
+      <p>I&rsquo;m Tom Cardoso, a reporter and data journalist based out of Toronto.</p>
+      <p>When I&rsquo;m not working on stories about criminal justice, politics or technology for <a href="http://www.theglobeandmail.com/authors/tom-cardoso">The Globe and Mail</a>, I can be found on <a href="http://www.twitter.com/tom_cardoso/">Twitter</a>, <a href="http://www.github.com/tomcardoso/">GitHub</a> or <a href="mailto:tomcardoso@protonmail.com">email</a>.</p>
+    </div>
+    <script type="text/javascript">
+      textBalancer.initialize('p');
+    </script>
   </body>
 </html>
