@@ -93,3 +93,12 @@ div {
     font-size: 1.4em;
   }
 }
+
+@media screen and (max-width: 321px) {
+  div {
+    width: 100%;
+  }
+  p {
+    font-size: 1.2em;
+  }
+}
